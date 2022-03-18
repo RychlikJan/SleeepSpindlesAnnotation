@@ -1,3 +1,5 @@
+import random
+
 import mne
 import pyedflib
 import numpy as np
@@ -9,10 +11,14 @@ path = "D:\\ZCU\\5.rocnik\\Diplomová práce\\data\\SS2\\"
 fullCount = 0
 max = 0
 min = 1000000
-FIRST_LAYER_SIZE = 64
+FIRST_LAYER_SIZE = 32
 SECOND_LAYER_SIZE = 32
 THIRD_LAYER_SIZE = 16
 OUTPUT_LAYER_SIZE = 0
+withSpindlesGlobal =0
+withoutSpindlesGlobal = 0
+skippedSpindlesGlobal = 0
+
 
 def getAnnotations(file):
     if(debug == 1):
@@ -42,11 +48,13 @@ def learnNetwork(layerInput, containsSpindle):
     print(layerInput)
 
 
-def saveToCSV(dataX, dataY):
+def saveToCSV(dataX, dataY, name):
     #data = np.concatenate((dataX,dataY))
     #np.savetxt("data.csv", dataX, delimiter=";")
-    with open("data.csv", "ab") as f:
+    with open("source32nonSpinRed" + str(name)+".csv", "ab") as f:
         np.savetxt(f, dataX, delimiter=";")
+    with open("output32nonSpinRed" + str(name)+".csv", "ab") as f:
+        np.savetxt(f, dataY, delimiter=";")
 
 
 def initData(data, annotations, filePos):
@@ -60,7 +68,7 @@ def initData(data, annotations, filePos):
     raw_data = data.get_data()
     dataX = []
     dataY = []
-    EEGchannel = 17
+    EEGchannel = 17 #channel position
     print(data.info.ch_names[EEGchannel])
     print("Count of spindles: " + str(len(duration)))
     sleepSpindlePos= 0;
@@ -69,7 +77,6 @@ def initData(data, annotations, filePos):
     withSpindle = 0
     skipped = 0
     arrayLen = raw_data.shape[1]
-    arrayLen = 300
     print("Array Len =" + str(arrayLen))
     sleepSpindleBorder1 = oneset[sleepSpindlePos]
     sleepSpindleBorder2 = sleepSpindleBorder1 + duration[sleepSpindlePos]
@@ -78,14 +85,15 @@ def initData(data, annotations, filePos):
         layerInput = raw_data[EEGchannel][pos:pos+FIRST_LAYER_SIZE]
         timeInput = data.times[pos:pos+FIRST_LAYER_SIZE]
         if(timeInput[len(timeInput)-1] <sleepSpindleBorder1):
-            layerInput = np.append(layerInput,0)
-            dataX.append(layerInput)
-            #dataY.append([0]) # False
-            withoutSpindle += 1
+            #layerInput = np.append(layerInput)
+            if(random.randint(0,100)==50):
+                dataX.append(layerInput)
+                dataY.append([0]) # False
+                withoutSpindle += 1
         elif(timeInput[0] > sleepSpindleBorder1 and sleepSpindleBorder2< timeInput[len(timeInput)-1]):
-            layerInput = np.append(layerInput,1)
+            #layerInput = np.append(layerInput)
             dataX.append(layerInput)
-            #dataY.append([1]) # true
+            dataY.append([1]) # true
             withSpindle += 1
         else:
             skipped += 1
@@ -96,18 +104,29 @@ def initData(data, annotations, filePos):
             sleepSpindlePos +=1
             if(sleepSpindlePos >= len(duration)):
                 sleepSpindlePos = len(duration)-1
-
+                break
             sleepSpindleBorder1 = oneset[sleepSpindlePos]
             sleepSpindleBorder2 = sleepSpindleBorder1 + duration[sleepSpindlePos]
         if(debug==1):
             if(pos%100000 == 0):
                 print("worked= " + str((pos * 100)/arrayLen) + "%")
         pos += FIRST_LAYER_SIZE
-    
-    saveToCSV(dataX,dataY)
+
+    if(filePos >= 15):
+        saveToCSV(dataX,dataY,"ToTest")
+    else:
+        saveToCSV(dataX, dataY, "ForTrain")
     print("With " + str(withSpindle))
     print("without " + str(withoutSpindle))
     print("Skipped "+ str(skipped))
+
+    global withSpindlesGlobal
+    withSpindlesGlobal += withSpindle
+    global withoutSpindlesGlobal
+    withoutSpindlesGlobal += withoutSpindle
+    global skippedSpindlesGlobal
+    skippedSpindlesGlobal +=skipped
+
 
 
 
@@ -142,7 +161,7 @@ def main():
     now = datetime.now()
     startTime = now.strftime("%H:%M:%S")
     print("Start Time =", startTime)
-    for i in range(1):
+    for i in range(19):
         names = [0 for x in range(2)]
         buildName(i+1, names)
         annotations = getAnnotations(names[1])
@@ -153,11 +172,11 @@ def main():
     print(min)
     print(max)
     now2 = datetime.now()
-    end = now.strftime("%H:%M:%S")
+    end = now2.strftime("%H:%M:%S")
     print("End time = ", end)
-    length = now2-now;
-    fullTime = length.strftime("%H:%M:%S")
-    print("Full Time =",fullTime)
+    print("With " + str(withSpindlesGlobal))
+    print("without " + str(withoutSpindlesGlobal))
+    print("Skipped " + str(skippedSpindlesGlobal))
     # vykresleni dat od urcite vzdalenosti nekam
 
 
