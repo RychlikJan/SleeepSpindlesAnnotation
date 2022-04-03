@@ -1,0 +1,73 @@
+-celkový pocet vretenek
+-nejdelsi vretenko
+-nejkratsi vretenko
+
+
+-obdobne pripady pouziti site na podobnem objemu dat
+
+
+sraz v pa - 12"45
+
+
+
+-------------
+Transformer / Attention based neuronovka na signal.
+
+
+
+With 173067
+without 2041911
+Skipped 37566
+
+Max size of spindle:        2.218605   \01-02-0014 PSG.edf
+Min size of spindle:        0.335915   \01-02-0017 PSG.edf
+Length size of spindle:     569        \01-02-0014 PSG.edf - 284+1+284
+Average count of spindles:  216.17904319885756
+Total count of spindles     11204
+
+
+
+
+
+
+
+
+Epoch 1/5
+112396/112396 [==============================] - 181s 2ms/step - loss: 0.1363 - accuracy: 0.9698
+Epoch 2/5
+112396/112396 [==============================] - 173s 2ms/step - loss: 0.1361 - accuracy: 0.9698
+Epoch 3/5
+112396/112396 [==============================] - 192s 2ms/step - loss: 0.1360 - accuracy: 0.9698
+Epoch 4/5
+112396/112396 [==============================] - 171s 2ms/step - loss: 0.1361 - accuracy: 0.9698
+Epoch 5/5
+112396/112396 [==============================] - 184s 2ms/step - loss: 0.1360 - accuracy: 0.9698
+Evaluating
+3513/3513 [==============================] - 6s 2ms/step - loss: 0.1357 - accuracy: 0.9698
+
+accuracy: 96.98%
+
+112396 zaznamu z toho 3398 vretenek.... cca 3,02 z celkoveho poctu; 96,98+3,02 = 100
+
+
+
+
+Vyvazeni mnozin - pro 64;
+Vytvorit kratsi okenko - 32
+
+Frantisek Partl
+Crossvalidation
+
+Jine metriky
+
+
+
+
+
+
+
+
+data z 27.3 1 classes- true/false
+With 26609
+without 20309
+Skipped 33199
