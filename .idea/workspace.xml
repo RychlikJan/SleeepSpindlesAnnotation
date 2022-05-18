@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35a70309-6157-481c-8542-3edbac1095a3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyConvolution1DTorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyConvolution1DTorch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyConvolutional1D.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyConvolutional1D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyData.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyDense.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyDense.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyNeuralNetworkLSTM.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyNeuralNetworkLSTM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output64nonSpinRedForTrain.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output64nonSpinRedForTrain.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output64nonSpinRedToTest.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output64nonSpinRedToTest.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,19 +22,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/todo.txt">
+        <entry file="file://$PROJECT_DIR$/PyDense.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="136">
+              <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PyNeuralNetworkLSTM.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main.py">
+        <entry file="file://$PROJECT_DIR$/PyBruteForce.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+            <state relative-caret-position="68">
+              <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -35,40 +58,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/outputToTest.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="8934435">
-              <caret line="525555" selection-start-line="525554" selection-end-line="525555" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sourceForTrain.csv">
-          <provider selected="true" editor-type-id="LargeFileEditor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/outputForTrain.csv">
-          <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="61319">
-              <caret line="3607" column="24" selection-start-line="3607" selection-start-column="24" selection-end-line="3607" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sourceToTest.csv">
-          <provider selected="true" editor-type-id="LargeFileEditor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NeuralNetworkLSTM.py">
+        <entry file="file://$PROJECT_DIR$/PyConvolution1DTorch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+            <state relative-caret-position="204">
+              <caret line="34" selection-start-line="34" selection-end-line="36" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PyConvolutional1D.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PyBruteForce4Channels.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,10 +105,26 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>dataY</find>
-      <find>1</find>
       <find>1.000000000000000000e+00</find>
       <find>64</find>
       <find>;</find>
+      <find>1</find>
+      <find>0.</find>
+      <find>1.</find>
+      <find>chan_idxs</find>
+      <find>y_val</find>
+      <find>0.000000000000000000e+00</find>
+      <find>bce2</find>
+      <find>y_batch</find>
+      <find>initLSTMData</find>
+      <find>initLSTM4ClasesData</find>
+      <find>split_sequence</find>
+      <find>getData</find>
+      <find>100</find>
+      <find>printSpindles</find>
+      <find>pyedflib</find>
+      <find>1.0;0.0</find>
+      <find>model_layers</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,17 +134,27 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Main2.py" />
-        <option value="$PROJECT_DIR$/Main.py" />
-        <option value="$PROJECT_DIR$/todo.txt" />
         <option value="$PROJECT_DIR$/NeuralNetworkLSTM.py" />
+        <option value="$PROJECT_DIR$/Main.py" />
+        <option value="$PROJECT_DIR$/Convolutional1D.py" />
+        <option value="$PROJECT_DIR$/test.txt" />
+        <option value="$PROJECT_DIR$/bruteForce.py" />
+        <option value="$PROJECT_DIR$/todo.txt" />
+        <option value="$PROJECT_DIR$/PyData.py" />
+        <option value="$PROJECT_DIR$/PyBruteForce4Channels.py" />
+        <option value="$PROJECT_DIR$/PyBruteForce.py" />
+        <option value="$PROJECT_DIR$/PyConvolution1DTorch.py" />
+        <option value="$PROJECT_DIR$/PyConvolutional1D.py" />
+        <option value="$PROJECT_DIR$/PyDense.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/PyNeuralNetworkLSTM.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="129" />
-    <option name="width" value="1440" />
-    <option name="height" value="774" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -134,7 +179,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/NeuralNetworkLSTM.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -156,8 +201,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.NeuralNetworkLSTM">
-    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.PyConvolution1DTorch">
+    <configuration name="Convolutional" type="PythonConfigurationType" factoryName="Python">
       <module name="SleeepSpindlesAnnotation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -170,7 +215,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyConvolutional1D.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -179,7 +224,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="NeuralNetworkLSTM" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="PyBruteForce" type="PythonConfigurationType" factoryName="Python">
       <module name="SleeepSpindlesAnnotation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -192,7 +237,139 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NeuralNetworkLSTM.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyBruteForce.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PyBruteForce4Channels" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SleeepSpindlesAnnotation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\JanRychlik\anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyBruteForce4Channels.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PyConvolution1DTorch" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SleeepSpindlesAnnotation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\JanRychlik\anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyConvolution1DTorch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PyData (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SleeepSpindlesAnnotation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyData.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PyData" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SleeepSpindlesAnnotation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\JanRychlik\anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyData.py" />
+      <option name="PARAMETERS" value="&quot;D:\\ZCU\\5.rocnik\\Diplomová práce\\data\\SS2&quot;" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PyDense" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SleeepSpindlesAnnotation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\JanRychlik\anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyDense.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PyNeuralNetworkLSTM" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SleeepSpindlesAnnotation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\JanRychlik\anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyNeuralNetworkLSTM.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -202,9 +379,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.NeuralNetworkLSTM" />
-      <item itemvalue="Python.Main" />
+      <item itemvalue="Python.PyNeuralNetworkLSTM" />
+      <item itemvalue="Python.PyDense" />
+      <item itemvalue="Python.Convolutional" />
+      <item itemvalue="Python.PyData" />
+      <item itemvalue="Python.PyConvolution1DTorch" />
+      <item itemvalue="Python.PyBruteForce" />
+      <item itemvalue="Python.PyBruteForce4Channels" />
+      <item itemvalue="Python.PyData (1)" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.PyData (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -247,11 +435,50 @@
       <workItem from="1647016133131" duration="1443000" />
       <workItem from="1647417081322" duration="1287000" />
       <workItem from="1647455841291" duration="3151000" />
+      <workItem from="1647604401691" duration="104000" />
+      <workItem from="1647764134811" duration="2701000" />
+      <workItem from="1647852882925" duration="1248000" />
+      <workItem from="1648049406811" duration="3486000" />
+      <workItem from="1648071560027" duration="2175000" />
+      <workItem from="1648104984220" duration="4621000" />
+      <workItem from="1648112561388" duration="2726000" />
+      <workItem from="1648282084567" duration="9838000" />
+      <workItem from="1648302999186" duration="27109000" />
+      <workItem from="1648623872496" duration="569000" />
+      <workItem from="1648631637124" duration="2017000" />
+      <workItem from="1648806651202" duration="4748000" />
+      <workItem from="1648838444543" duration="1533000" />
+      <workItem from="1648923147630" duration="4276000" />
+      <workItem from="1648964432371" duration="1330000" />
+      <workItem from="1649063327229" duration="1598000" />
+      <workItem from="1649099471891" duration="4259000" />
+      <workItem from="1649106101654" duration="2441000" />
+      <workItem from="1649108665344" duration="2316000" />
+      <workItem from="1649132999827" duration="16493000" />
+      <workItem from="1649504384684" duration="3623000" />
+      <workItem from="1649617227281" duration="3774000" />
+      <workItem from="1649705801130" duration="2555000" />
+      <workItem from="1649775043351" duration="4228000" />
+      <workItem from="1649827592762" duration="3908000" />
+      <workItem from="1649847597217" duration="9426000" />
+      <workItem from="1650116407412" duration="6087000" />
+      <workItem from="1650179614623" duration="2663000" />
+      <workItem from="1650386826700" duration="13949000" />
+      <workItem from="1651121494951" duration="3550000" />
+      <workItem from="1651776805134" duration="4000" />
+      <workItem from="1651821836308" duration="687000" />
+      <workItem from="1651829188937" duration="225000" />
+      <workItem from="1651852456235" duration="5743000" />
+      <workItem from="1652082017633" duration="5664000" />
+      <workItem from="1652107994216" duration="12351000" />
+      <workItem from="1652161301117" duration="7742000" />
+      <workItem from="1652817982586" duration="785000" />
+      <workItem from="1652870512912" duration="3890000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109644000" />
+    <option name="totallyTimeSpent" value="296086000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -265,54 +492,54 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1048" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27132195" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19722815" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35081968" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.47650275" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32896176" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8608742" weight="0.47322404" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989059" weight="0.5945355" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32896176" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32877493" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32786885" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.3989071" />
-      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49733475" weight="0.32349727" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.1391258" side_tool="true" weight="0.47322404" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32896176" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.2739872" />
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.13539445" />
       <window_info anchor="right" id="R Packages" order="4" />
       <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="R Graphics" order="6" />
+      <window_info anchor="right" id="R Graphics" order="6" weight="0.32995737" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16204691" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19296375" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22076502" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.47650275" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32896176" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8608742" visible="true" weight="0.47322404" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989059" weight="0.5949227" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32896176" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32877493" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32786885" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.3989071" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49733475" weight="0.32349727" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.1391258" side_tool="true" visible="true" weight="0.47322404" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.2739872" />
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.1359275" />
       <window_info anchor="right" id="R Packages" order="4" />
       <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="R Graphics" order="6" />
+      <window_info anchor="right" id="R Graphics" order="6" weight="0.32995737" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,24 +549,69 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/NeuralNetworkLSTM.py</url>
-          <line>119</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/PyNeuralNetworkLSTM.py</url>
+          <line>100</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/NeuralNetworkLSTM.py</url>
+          <url>file://$PROJECT_DIR$/PyData.py</url>
+          <line>200</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PyData.py</url>
+          <line>314</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PyNeuralNetworkLSTM.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PyData.py</url>
+          <line>187</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PyData.py</url>
+          <line>185</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PyConvolution1DTorch.py</url>
+          <line>159</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PyConvolution1DTorch.py</url>
+          <line>144</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PyBruteForce.py</url>
+          <line>73</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PyBruteForce.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PyBruteForce.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PyData.py</url>
+          <line>254</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PyConvolution1DTorch.py</url>
           <line>116</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/NeuralNetworkLSTM.py</url>
-          <line>113</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/NeuralNetworkLSTM.py</url>
-          <line>52</line>
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -348,56 +620,23 @@
         <watch expression="data._raw_extras[0]['cal']" />
         <watch expression="data.times[11]" />
         <watch expression="trainY[99]" />
+        <watch expression="annotations.description" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SleeepSpindlesAnnotation$Main.coverage" NAME="Main Coverage Results" MODIFIED="1647020169313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SleeepSpindlesAnnotation$NeuralNetworkLSTM.coverage" NAME="NeuralNetworkLSTM Coverage Results" MODIFIED="1647473079245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SleeepSpindlesAnnotation$PyNeuralNetworkLSTM.coverage" NAME="PyNeuralNetworkLSTM Coverage Results" MODIFIED="1652124354194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SleeepSpindlesAnnotation$PyBruteForce.coverage" NAME="PyBruteForce Coverage Results" MODIFIED="1650400724026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SleeepSpindlesAnnotation$PyBruteForce4Channels.coverage" NAME="PyBruteForce4Channels Coverage Results" MODIFIED="1652171620305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SleeepSpindlesAnnotation$Main.coverage" NAME="PyData Coverage Results" MODIFIED="1648291978389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SleeepSpindlesAnnotation$Convolutional.coverage" NAME="Convolutional Coverage Results" MODIFIED="1652168792327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SleeepSpindlesAnnotation$PyData.coverage" NAME="PyData Coverage Results" MODIFIED="1652871944786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SleeepSpindlesAnnotation$PyDense.coverage" NAME="PyDense Coverage Results" MODIFIED="1652116466652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SleeepSpindlesAnnotation$PyConvolution1DTorch.coverage" NAME="PyConvolution1DTorch Coverage Results" MODIFIED="1652874309760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SleeepSpindlesAnnotation$NeuralNetworkLSTM.coverage" NAME="PyNeuralNetworkLSTM Coverage Results" MODIFIED="1648293776701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Main2.py" />
-    <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/mne/io/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="703" column="17" selection-start-line="703" selection-start-column="17" selection-end-line="703" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/mne/io/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#180#233#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/statsmodels/tsa/vector_ar/var_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1234">
-          <caret line="1279" column="8" selection-start-line="1279" selection-start-column="8" selection-end-line="1279" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/statsmodels/tsa/seasonal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="251" column="8" selection-start-line="251" selection-start-column="8" selection-end-line="251" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gitToken.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data.csv" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/mne/io/edf/edf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1329">
@@ -411,43 +650,6 @@
     <entry file="file://$PROJECT_DIR$/data1.csv">
       <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/DELETEresultTest1.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DELETEresultPredict1.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output64nonSpinRedForTrain.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-5100" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output32nonSpinRedForTrain.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source32nonSpinRedForTrain.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="75" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/outputToTest.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="8934435">
@@ -458,32 +660,281 @@
     <entry file="file://$PROJECT_DIR$/sourceForTrain.csv">
       <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/sourceToTest.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/outputForTrain.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="445">
+          <caret line="3683" column="24" selection-start-line="3683" selection-start-column="24" selection-end-line="3683" selection-end-column="24" />
+        </state>
+      </provider>
       <provider editor-type-id="csv-text-editor">
         <state relative-caret-position="-1824798">
           <caret line="3554" column="1" selection-start-line="3554" selection-end-line="3554" selection-end-column="1" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="61319">
-          <caret line="3607" column="24" selection-start-line="3607" selection-start-column="24" selection-end-line="3607" selection-end-column="24" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source32nonSpinRedToTest.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gitToken.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source64nonSpinRed4ClassesForTrain.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source64nonSpinRed4ClassesToTest.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-1501" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output64nonSpinRed4ClassesToTest.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DELETEresultPredict1.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="99" selection-start-line="51" selection-start-column="99" selection-end-line="51" selection-end-column="99" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DELETEresultTest1.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="55" selection-start-line="17" selection-start-column="8" selection-end-line="23" selection-end-column="55" />
+        </state>
+      </provider>
+      <provider editor-type-id="LargeFileEditor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/tensorflow/python/framework/func_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18938">
+          <caret line="1148" column="19" selection-start-line="1148" selection-start-column="19" selection-end-line="1148" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sourceToTest.csv">
+    <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/torch/nn/modules/linear.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source32nonSpinRedForTrain.csv">
       <provider selected="true" editor-type-id="LargeFileEditor" />
+      <provider editor-type-id="csv-text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="75" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source64nonSpinRedConvolutionalToTest.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weights.h5">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/torch/nn/functional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53040">
+          <caret line="3129" selection-start-line="3129" selection-end-line="3129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source64nonSpinRedConvolutionalForTrain.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output64nonSpinRed4ChannelsToTest.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-719845">
+          <caret line="860" column="24" selection-start-line="860" selection-start-column="24" selection-end-line="860" selection-end-column="24" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output64nonSpinRed4ClassesForTrain.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output64nonSpinRed4ChannelsForTrain.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="17">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output64nonSpinRedConvolutionalForTrain.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source64nonSpinRed4ChannelsForTrain.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output64nonSpinRedForTrain.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="4879">
+          <caret line="287" column="7" selection-start-line="287" selection-start-column="7" selection-end-line="287" selection-end-column="7" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source64nonSpinRedForTrain.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output32nonSpinRedForTrain.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output32nonSpinRedToTest.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source64nonSpinRedToTest.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1ChannelSameInTimeFullSpindle.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/todo.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="1326">
+          <caret line="78" column="20" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NeuralNetworkLSTM.py">
+    <entry file="file://$PROJECT_DIR$/PyData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+        <state relative-caret-position="-7658">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output64nonSpinRedToTest.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="398">
+          <caret line="272" selection-start-line="272" selection-end-line="273" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4channelsSameInTime.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4channelsDiffInTime.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AccurencyOnDataset.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CountOfDiffSamples.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CountOfSameSamples.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyBruteForce4Channels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyBruteForce.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyConvolution1DTorch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="34" selection-start-line="34" selection-end-line="36" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyConvolutional1D.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyDense.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyNeuralNetworkLSTM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

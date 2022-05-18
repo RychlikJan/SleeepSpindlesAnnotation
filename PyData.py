@@ -1,13 +1,12 @@
 import random
 
 import mne
-import pyedflib
+import sys
 import numpy as np
 from datetime import datetime
 
 
 debug = 1
-path = "D:\\ZCU\\5.rocnik\\Diplomová práce\\data\\SS2\\"
 fullCount = 0
 max = 0
 min = 1000000
@@ -169,6 +168,10 @@ def initLSTMData(data, annotations, filePos):
     raw_data = data.get_data()
     dataX = []
     dataY = []
+    # EEG P3-CLE 08
+    # EEG C3-CLE 06
+    # EEG O1-CLE 10
+    # EEG C3-LER
     EEGchannel = 17 #channel position
     print(data.info.ch_names[EEGchannel])
     print("Count of spindles: " + str(len(duration)))
@@ -183,18 +186,26 @@ def initLSTMData(data, annotations, filePos):
     sleepSpindleBorder2 = sleepSpindleBorder1 + duration[sleepSpindlePos]
     #TODO The time to work with data
     while pos <= (arrayLen-(FIRST_LAYER_SIZE)):
-        layerInput = raw_data[EEGchannel][pos:pos+FIRST_LAYER_SIZE]
+        #layerInput = raw_data[EEGchannel][pos:pos+FIRST_LAYER_SIZE]
         timeInput = data.times[pos:pos+FIRST_LAYER_SIZE]
         if(timeInput[len(timeInput)-1] <sleepSpindleBorder1):
             #layerInput = np.append(layerInput)
             if(random.randint(0,100)==50):
-                dataX.append(layerInput)
-                dataY.append([0]) # False
+                value = 0
+                for j in range(FIRST_LAYER_SIZE):
+                    value = value + abs(raw_data[17][pos+j])
+                    print("no spindle value: " + str(value))
+                dataX.append(raw_data[17][pos:pos+FIRST_LAYER_SIZE])
+                dataY.append([0])
                 withoutSpindle += 1
         elif(timeInput[0] > sleepSpindleBorder1 and sleepSpindleBorder2> timeInput[len(timeInput)-1]):
             #layerInput = np.append(layerInput)
-            dataX.append(layerInput)
-            dataY.append([1]) # true
+            value = 0
+            for j in range(FIRST_LAYER_SIZE):
+                value = value + abs(raw_data[17][pos + j])
+                print("spindle value: " + str(value))
+            dataX.append(raw_data[17][pos:pos + FIRST_LAYER_SIZE])
+            dataY.append([1])
             withSpindle += 1
         else:
             skipped += 1
@@ -213,10 +224,10 @@ def initLSTMData(data, annotations, filePos):
                 print("worked= " + str((pos * 100)/arrayLen) + "%")
         pos += FIRST_LAYER_SIZE
 
-    if(filePos >= 15):
-        saveToCSV(dataX,dataY,"ToTest")
-    else:
-        saveToCSV(dataX, dataY, "ForTrain")
+    # if(filePos >= 15):
+    #     saveToCSV(dataX,dataY,"4ChannelsToTest")
+    # else:
+    #     saveToCSV(dataX, dataY, "4ChannelsForTrain")
     print("With " + str(withSpindle))
     print("without " + str(withoutSpindle))
     print("Skipped "+ str(skipped))
@@ -242,17 +253,17 @@ def printSpindles(data, annotations):
     chan_idxs = [data.ch_names.index(ch) for ch in data.ch_names]
     fullCount += len(oneset)
     for i in range(len(oneset)):
-        setMaxMin(duration[i])
+        #setMaxMin(duration[i])
         data.plot(order=chan_idxs, start=oneset[i], duration=duration[i]+2)
 
 
 def buildName(pos, names):
     if(pos < 10 ):
-        names[0] = path + "data\\01-02-000"+str(pos)+" PSG.edf"
-        names[1] = path + "Annotations\\01-02-000"+str(pos)+" Spindles_E1.edf"
+        names[0] = path + "\\data\\01-02-000"+str(pos)+" PSG.edf"
+        names[1] = path + "\\Annotations\\01-02-000"+str(pos)+" Spindles_E1.edf"
     else:
-        names[0] = path + "data\\01-02-00" + str(pos) + " PSG.edf"
-        names[1] = path + "Annotations\\01-02-00" + str(pos) + " Spindles_E1.edf"
+        names[0] = path + "\\data\\01-02-00" + str(pos) + " PSG.edf"
+        names[1] = path + "\\Annotations\\01-02-00" + str(pos) + " Spindles_E1.edf"
     if (debug == 1):
         print("Names generated: " + names[0] + ", " + names[1])
 
@@ -269,6 +280,9 @@ def initLSTM4ClasesData(data, annotations, filePos):
     raw_data = data.get_data()
     dataX = []
     dataY = []
+    # EEG P3-CLE
+    # EEG C3-CLE
+    # EEG O1-CLE
     EEGchannel = 17  # channel position
     print(data.info.ch_names[EEGchannel])
     print("Count of spindles: " + str(len(duration)))
@@ -359,6 +373,9 @@ def initConvolutionalData(data, annotations, filePos):
     raw_data = data.get_data()
     dataX = []
     dataY = []
+    # EEG P3-CLE
+    # EEG C3-CLE
+    # EEG O1-CLE
     EEGchannel = 17  # channel position
     print(data.info.ch_names[EEGchannel])
     print("Count of spindles: " + str(len(duration)))
@@ -437,9 +454,35 @@ def initConvolutionalData(data, annotations, filePos):
     postSpindleGlobal += postSpindleCount
 
 
+def getMinMax(data):
+    global min
+    global max
+    if(debug == 1):
+        print("Get Min Max")
+    raw_data = data.get_data()
+    EEGchannel = 17  # channel position
+    print(data.info.ch_names[EEGchannel])
+    for i in range(len(raw_data[EEGchannel])):
+        if(raw_data[EEGchannel][i] > max):
+            max = raw_data[EEGchannel][i]
+            print("Max: " + str(max))
+        if (raw_data[EEGchannel][i] < min):
+            min = raw_data[EEGchannel][i]
+            print("Min: " + str(min))
+    print("-----------------------------------")
+    print("Max: " + str(max))
+    print("Min: " + str(min))
+
+
 
 def main():
-    print("Hello World!")
+    print("Program started")
+    if (len(sys.argv) != 2):
+        print("Wrong arguments, as 2nd argument use file path")
+        return
+    global path
+    path = sys.argv[1]
+    print(path)
     now = datetime.now()
     startTime = now.strftime("%H:%M:%S")
     print("Start Time =", startTime)
@@ -450,12 +493,12 @@ def main():
         data = getData(names[0])
 
         #dataStatistics(data,annotations)
-        #printSpindles(data,annotations)
-
+        printSpindles(data,annotations)
+        #getMinMax(data)
         #initLSTMData(data, annotations, i+1)
         #initLSTM4ClasesData(data, annotations, i + 1)
         #initConvolutionalData(data, annotations, i + 1)
-        initCovolutionalData(data,annotations,i+1)
+        #initCovolutionalData(data,annotations,i+1)
         #printStatistics()
 
     print(fullCount)

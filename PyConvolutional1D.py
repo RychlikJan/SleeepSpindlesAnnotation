@@ -10,27 +10,30 @@ from keras.layers import Dense, Dropout, Activation, Flatten
 from keras.layers import Convolution1D, MaxPooling2D
 from keras.layers.convolutional import MaxPooling1D
 import tensorflow as tf
+import sys
 
 from keras.utils import np_utils
 from keras.datasets import mnist
 
 def saveToCSV(dataX, dataY, name):
-    #data = np.concatenate((dataX,dataY))
-    #np.savetxt("data.csv", dataX, delimiter=";")
-
     with open("DELETEresultTest" + str(name)+".csv", "ab") as f:
         np.savetxt(f, dataX, delimiter=";")
     with open("DELETEresultPredict" + str(name)+".csv", "ab") as f:
         np.savetxt(f, dataY, delimiter=";")
 
 def main():
+    if(len(sys.argv) != 5):
+        print("Wrong arguments, expect 5")
+        exit()
     dim = 568
-    dataframe = pandas.read_csv("source64nonSpinRedConvolutionalForTrain.csv", header=None, delimiter=";")
+    dataframe = pandas.read_csv(sys.argv[1], header=None, delimiter=";")
+    #dataframe = pandas.read_csv("source64nonSpinRedConvolutionalForTrain.csv", header=None, delimiter=";")
     print(dataframe.head())
     dataset = dataframe.values
     trainX = dataset[:, 0:dim]
     trainX = trainX[:,:,newaxis]
-    dataframe = pandas.read_csv("output64nonSpinRedConvolutionalForTrain.csv", header=None, delimiter=";")
+    dataframe = pandas.read_csv(sys.argv[2], header=None, delimiter=";")
+    #dataframe = pandas.read_csv("output64nonSpinRedConvolutionalForTrain.csv", header=None, delimiter=";")
     dataset = dataframe.values
     trainY = dataset[:, 0:1]
 
@@ -39,19 +42,25 @@ def main():
     print(trainY.shape)
 
     # load validation csv file
-    dataframe = pandas.read_csv("source64nonSpinRedConvolutionalToTest.csv", header=None, delimiter=";")
+    dataframe = pandas.read_csv(sys.argv[3], header=None, delimiter=";")
+    #dataframe = pandas.read_csv("source64nonSpinRedConvolutionalToTest.csv", header=None, delimiter=";")
     print(dataframe.head())
     dataset = dataframe.values
     testX = dataset[:, 0:dim]
 
     testX = testX[:,:,newaxis]
-    dataframe = pandas.read_csv("output64nonSpinRedConvolutionalToTest.csv", header=None, delimiter=";")
+    dataframe = pandas.read_csv(sys.argv[4], header=None, delimiter=";")
+    #dataframe = pandas.read_csv("output64nonSpinRedConvolutionalToTest.csv", header=None, delimiter=";")
     dataset = dataframe.values
     testY = dataset[:, 0:dim]
 
     print("Printing validation data")
     print(testX.shape)
     print(testY.shape)
+    max = 0.00039350522621499963
+    min = -0.00039420439459830623
+    testX = (testX - min) / (max - min)
+    trainX = (trainX - min) / (max - min)
 
     # create model
     model = Sequential()

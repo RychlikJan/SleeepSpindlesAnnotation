@@ -8,14 +8,20 @@ from keras.layers import Dense, Dropout, Activation, Flatten
 from keras.layers import Convolution2D, MaxPooling2D
 from keras.utils import np_utils
 from keras.datasets import mnist
+import sys
 
 def main():
-    dim = 64
-    dataframe = pandas.read_csv("source64nonSpinRedForTrain.csv", header=None, delimiter=";")
+    if(len(sys.argv) != 5):
+        print("Wrong arguments, expect 5")
+        exit()
+    dim = 32
+    dataframe = pandas.read_csv(sys.argv[1], header=None, delimiter=";")
+    #dataframe = pandas.read_csv("source32nonSpinRedForTrain.csv", header=None, delimiter=";")
     print(dataframe.head())
     dataset = dataframe.values
     trainX = dataset[:, 0:dim]
-    dataframe = pandas.read_csv("output64nonSpinRedForTrain.csv", header=None, delimiter=";")
+    dataframe = pandas.read_csv(sys.argv[2], header=None, delimiter=";")
+    #dataframe = pandas.read_csv("output32nonSpinRedForTrain.csv", header=None, delimiter=";")
     dataset = dataframe.values
     trainY = dataset[:, 0:dim]
 
@@ -24,17 +30,23 @@ def main():
     print(trainY.shape)
 
     # load validation csv file
-    dataframe = pandas.read_csv("source64nonSpinRedToTest.csv", header=None, delimiter=";")
+    dataframe = pandas.read_csv(sys.argv[3], header=None, delimiter=";")
+    #dataframe = pandas.read_csv("source32nonSpinRedToTest.csv", header=None, delimiter=";")
     print(dataframe.head())
     dataset = dataframe.values
     testX = dataset[:, 0:dim]
-    dataframe = pandas.read_csv("output64nonSpinRedToTest.csv", header=None, delimiter=";")
+    dataframe = pandas.read_csv(sys.argv[4], header=None, delimiter=";")
+    #dataframe = pandas.read_csv("output32nonSpinRedToTest.csv", header=None, delimiter=";")
     dataset = dataframe.values
     testY = dataset[:, 0:dim]
 
     print("Printing validation data")
     print(testX.shape)
     print(testY.shape)
+    max = 0.00039350522621499963
+    min = -0.00039420439459830623
+    testX = (testX - min) / (max - min)
+    trainX = (trainX - min) / (max - min)
 
     # create model
     model = Sequential()
@@ -54,7 +66,7 @@ def main():
     model.summary()
 
     # Fit the model
-    model.fit(trainX, trainY, epochs=1, batch_size=1)
+    model.fit(trainX, trainY, epochs=1, batch_size=5)
 
     # evaluate the model
     print("Evaluating")
